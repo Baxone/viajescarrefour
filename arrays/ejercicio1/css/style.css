@@ -1,0 +1,13 @@
+.alumnos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alumnos article {
+    width: calc(50% - 20px);
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+}
