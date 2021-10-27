@@ -6,15 +6,15 @@
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
-
-    $result = insertContact($conn, $name, $phone, $email);
-
-    if($result)
+   
+     $result = insertContact($conn, $name, $phone, $email);
+  
+     if($result)
     {
         //se ha insertado correctamente
         header('Location: index.php');
     }else{
         echo 'fallo en la insercion';
-    }
+    }  
 
 ?>

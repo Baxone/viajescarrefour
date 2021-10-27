@@ -31,7 +31,34 @@
 
         $insercion = mysqli_query($pConn, $query);
 
-        return insercion;
+        return $insercion;
+    }
+
+    /*
+    *   deleteContact
+    *   Recibe el id y la conexion a la bbdd del registro a borrar
+    *   Return true o false
+    */
+
+    function deleteContact($pConn, $pId){
+        $query = "DELETE FROM contactos WHERE id='$pId'";
+
+        $borrado = mysqli_query($pConn, $query);
+        
+        return $borrado;
+    }
+
+    /*
+    *   getContact
+    *   Recibe el id y la conexion a la bbdd del registro a recuperar
+    *   Return el registro completo de la bbdd
+    */
+
+    function getContact($pConn, $pId){
+        $query = "SELECT * FROM contactos WHERE id='$pId'";
+        $consulta = mysqli_query($pConn, $query);
+
+        return $registro = mysqli_fetch_assoc($consulta);
     }
 
 ?>
