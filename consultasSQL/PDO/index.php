@@ -1,3 +1,4 @@
+<?php include('inc/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,9 +17,9 @@
             <input type="password" name="pass" placeholder="Introduce tu password">
             <input type="submit" value="Entrar">
         </form>
+        <?=  getNotifications(); ?>
     </main>
 </div>
 
-    
 </body>
 </html>

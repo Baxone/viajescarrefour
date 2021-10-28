@@ -12,8 +12,8 @@
             <td><?= $registro['description'] ?></td>
             <td><?= $registro['precio'] ?></td>
             <td class="<?= ($registro['stock'] == 'true')? 'verde' : 'rojo'  ?>"><?= ($registro['stock'] == 'true')? 'Hay Stock' : 'No hay stock' ?></td>
-            <td><a href="update.php">Actualizar</a></td>
-            <td><a href="delete.php">Borrar</a></td>
+            <td><a href="update.php?id=<?= $registro['id'] ?>">Actualizar</a></td>
+            <td><a href="inc/delete.php?id=<?= $registro['id'] ?>">Borrar</a></td>
         </tr>
 
     <?php

@@ -12,7 +12,7 @@ if($user == "" || $pass == ""){
     $usuario = $consultas->getUserByName($user);
     //verificar que el password del usuario coincide con el password recibido
 
-    if($usuario && $usuario['password'] == $pass)
+    if($usuario && password_verify($pass, $usuario['password']))
     {
         //entrariamos en el panel de control de mi crm, creamos las variables de sesion
         $_SESSION['user'] = $usuario['user'];

@@ -13,6 +13,9 @@
             return $conexion;
         }
 
+        //si necesitas parar la conexion por motivos n 
+        //$conexion->close();
+
     }
 
 

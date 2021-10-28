@@ -5,6 +5,7 @@
         header('Location: index.php?error=3');
     }
     require('models/class.consultas.php');
+     require('inc/functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -20,9 +21,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Catalogo</a></li>
-                <li><a href="">Nuevo Producto</a></li>
-                 <li><a href="">Logout</a></li>
+                <li><a href="panel.php">Catalogo</a></li>
+                <li><a href="new.php">Nuevo Producto</a></li>
+                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
+    <?= getNotifications() ?>
