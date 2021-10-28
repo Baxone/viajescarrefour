@@ -70,6 +70,51 @@ class Consultas{
         }
     }
 
+    public function getProductById($pId){
+       $idProduct = (int) $pId;
+       $conn = new Conexion();
+       $conexion = $conn->getConexion();
+
+        $query = "SELECT * FROM productos WHERE id= :id";
+
+        $consulta = $conexion->prepare($query);
+        $consulta->bindParam(':id', $pId);
+        $consulta->execute();
+
+        $producto = $consulta->fetch();
+        return $producto;
+
+    }
+
+    public function updateProduct($pProduct)
+    {
+            
+        $conn = new Conexion();
+        $conexion = $conn->getConexion();
+
+        $query = "UPDATE productos SET name=:name, description=:description, stock=:stock, precio=:precio WHERE id=:id";
+
+        $precio = floatval($pProduct['precio']);
+        $myId = (int) $pProduct['id'];
+
+        $actualizar = $conexion->prepare($query);
+        $actualizar->bindParam(':name', $pProduct['name']);
+        $actualizar->bindParam(':description', $pProduct['description']);
+        $actualizar->bindParam(':stock', $pProduct['stock']);
+        $actualizar->bindParam(':precio',$precio );
+        $actualizar->bindParam(':id', $myId );
+
+        if(!$actualizar)
+        {
+            return "No se ha podido modificar el producto";
+        }
+        else
+        {
+            $actualizar->execute();
+            return "El producto se ha modificado correctamente";
+        } 
+    }
+
 }
 
 
