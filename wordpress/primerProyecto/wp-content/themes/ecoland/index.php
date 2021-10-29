@@ -1,1 +1,1 @@
-<h1>Cajon de sastre</h1>
+<h1>Este es la pagina que se sirve si no encuentra plantilla expecifica</h1>
