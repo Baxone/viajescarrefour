@@ -15,7 +15,7 @@
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/" class="nav-link"><span>Home</span></a></li>
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/services" class="nav-link"><span>Services</span></a></li>
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/about-us" class="nav-link"><span>About</span></a></li>
-	        	<li class="nav-item"><a href="destination.html" class="nav-link"><span>Destination</span></a></li>
+	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/destinos" class="nav-link"><span>Destination</span></a></li>
 	        	<li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
