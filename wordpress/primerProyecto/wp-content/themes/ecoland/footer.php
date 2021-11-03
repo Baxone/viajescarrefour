@@ -10,7 +10,8 @@
 				</div>
         
           <div class="col-md-12 text-center">
-						<p>Copyright &copy; 2019 All rights reserved</p>
+            <?php  $variablesfoot = array('menu' => 'footer', 'menu_class' => 'd-flex' ) ?>
+						<p>Copyright &copy; 2019 All rights reserved - <?php  wp_nav_menu($variablesfoot);  ?></p>
           </div>
         </div>
       </div>

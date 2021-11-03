@@ -106,5 +106,14 @@ function destinos_init(){
 
     }
 
+    //añadir la posibilidad de tener menús dinamicos.
+
+    add_theme_support('nav_menus');
+
+    if(function_exists('register_nav_menu'))
+    {
+      register_nav_menus();
+    }
+
     
 ?>

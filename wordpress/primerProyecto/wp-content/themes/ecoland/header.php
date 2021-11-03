@@ -10,7 +10,7 @@
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
+	      <!-- <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/" class="nav-link"><span>Home</span></a></li>
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/services" class="nav-link"><span>Services</span></a></li>
@@ -18,7 +18,13 @@
 	        	<li class="nav-item"><a href="http://localhost:8888/php_viajes_carrefour/wordpress/primerProyecto/destinos" class="nav-link"><span>Destination</span></a></li>
 	        	<li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
-	      </div>
+	      </div> -->
+		 <?php 
+		 	$variables = array('menu' => 'principal', 'container' => 'div', 'container_class' => 'collapse navbar-collapse', 'container_id' => 'ftco-nav',  'menu_class' => 'navbar-nav nav ml-auto' );
+
+		 wp_nav_menu($variables); 
+		 
+		 ?>
 	    </div>
 		</nav>
 	</header>

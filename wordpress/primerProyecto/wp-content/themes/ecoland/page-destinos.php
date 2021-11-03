@@ -1,5 +1,4 @@
 <?php get_header() ?>
-   
     <section class="ftco-section">
         <?php while( have_posts()): the_post(); ?> 
             <div class="container">
@@ -9,6 +8,7 @@
                 <div>
                     <?php the_content(); ?>
                 </div>
+					
             </div>
             </div>
         <?php endwhile; ?>

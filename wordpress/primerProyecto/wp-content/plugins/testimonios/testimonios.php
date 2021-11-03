@@ -27,7 +27,7 @@ function testimonios_init(){
             'not_found' => __('No hay nada publicado'),
             'not_found_in_trash' => __('No hay nada en la papelera')
   );
-  //voy a definir el tipo de contenido
+  //voy a definir el tipo de contenido custom post type
     $argumentos = array(
       'labels' => $etiquetas,
       'Description' => 'Descripción',

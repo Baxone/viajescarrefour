@@ -20,4 +20,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/flaticon.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/icomoon.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/style.css">
+    <!-- funcion que carga los script que tenga los plugin y el admin de wordpress -->
+
+    <?php wp_head(); ?>
   </head>
