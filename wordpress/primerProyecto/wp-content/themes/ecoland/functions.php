@@ -115,5 +115,20 @@ function destinos_init(){
       register_nav_menus();
     }
 
+     //añadir la posibilidad de tener widgets
+
+     if(function_exists('register_sidebar')){
+
+        register_sidebar(array(
+          'name'  => 'Zona de Contacto',
+          'id' => 'zona_contacto',
+          'description' => 'Zona de widgets',
+          'before_widget' => '<div class="col-md-9 text-center">',
+          'after_widget' => '</div>',
+          'before_title' => '<h2>',
+          'after_title' => '</h2>'
+        ));
+
+     }
     
 ?>
